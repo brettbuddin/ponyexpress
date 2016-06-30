@@ -1,0 +1,14 @@
+package: github.com/brettbuddin/ponyexpress
+import:
+- package: github.com/julienschmidt/httprouter
+- package: github.com/nu7hatch/gouuid
+- package: github.com/satori/go.uuid
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: golang.org/x/text
+  subpackages:
+  - encoding
+- package: golang.org/x/crypto
+  subpackages:
+  - ssh/terminal

@@ -1,0 +1,22 @@
+hash: 34455fe7b3748303a85a57e85e07d6bebf3b27aac28994d790302548a7b838c0
+updated: 2016-06-30T08:52:53.693631074-04:00
+imports:
+- name: github.com/julienschmidt/httprouter
+  version: 34b953ecc77d7cf6ef91946943a4a1167767ff62
+- name: github.com/nu7hatch/gouuid
+  version: 34b953ecc77d7cf6ef91946943a4a1167767ff62
+- name: github.com/satori/go.uuid
+  version: 34b953ecc77d7cf6ef91946943a4a1167767ff62
+- name: golang.org/x/crypto
+  version: 811831de4c4dd03a0b8737233af3b36852386373
+  subpackages:
+  - ssh/terminal
+- name: golang.org/x/net
+  version: 34b953ecc77d7cf6ef91946943a4a1167767ff62
+  subpackages:
+  - context
+- name: golang.org/x/text
+  version: 34b953ecc77d7cf6ef91946943a4a1167767ff62
+  subpackages:
+  - encoding
+devImports: []

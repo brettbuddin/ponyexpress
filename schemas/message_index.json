@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+          "results": {
+            "type": "number"
+          },
+          "limit": {
+            "type": "number"
+          },
+          "since_id": {
+            "type": "string"
+          },
+          "last_id": {
+            "type": "string"
+          }
+      },
+      "required": ["results", "limit", "since_id", "last_id"]
+    },
+    "messages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "sender": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "received": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": ["id", "sender", "subject", "body", "received"]
+      }
+    }
+  },
+  "required": ["meta", "messages"]
+}
